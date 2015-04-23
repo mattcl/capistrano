@@ -1,4 +1,4 @@
-action :create
+actions :create
 default_action :create
 
 attribute :deploy_path, kind_of: String, name_attribute: true
