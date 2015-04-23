@@ -1,8 +1,8 @@
 action :create do
   deploy_path = new_resource.deploy_path
-  shared_path = File.join(deploy_path, 'shared')
-  config_path = File.join(shared_path, 'config')
-  initializers_path = File.join(config_path, 'initializers')
+  shared_path = ::File.join(deploy_path, 'shared')
+  config_path = ::File.join(shared_path, 'config')
+  initializers_path = ::File.join(config_path, 'initializers')
 
   # create the directory structure
   [
