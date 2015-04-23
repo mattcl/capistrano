@@ -21,7 +21,7 @@ action :create do
     template File.join(deploy_path, info['path'], name) do
       owner new_resource.owner
       group new_resource.group
-      variables(info['variables'])
+      variables(new_resource.default_vars.merge(info['variables']))
     end
   end
 
