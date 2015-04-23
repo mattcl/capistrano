@@ -6,7 +6,7 @@ action :create do
 
   # create the directory structure
   [
-    base_path,
+    deploy_path,
     shared_path,
     config_path,
     initializers_path
